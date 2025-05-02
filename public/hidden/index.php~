@@ -1,0 +1,4 @@
+﻿<?php
+// Phiên bản cũ - không nên để lộ
+echo "Đây là phiên bản sao lưu của index.php";
+?>

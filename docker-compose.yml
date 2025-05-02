@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: secureportal
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html
+    networks:
+      - labnet
+    extra_hosts:
+      - "secureportal.local:127.0.0.1"
+
+networks:
+  labnet:
